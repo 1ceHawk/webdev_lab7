@@ -8,7 +8,7 @@ function init() {
 
         let message = input.value;
 
-        alert("Your Name: " + message);
+        alert("Isatu Kargbo: " + message);
 
         output.innerHTML = message;
     });
