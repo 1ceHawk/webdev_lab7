@@ -1,15 +1,15 @@
 function init() {
+    const button = document.getElementById("entrybutton");
+    const input = document.getElementById("entryinput");
+    const output = document.getElementById("textoutput");
 
-    const button = document.getElementById('alertMe');
-    const input = document.getElementById('alertMessage');
-    const output = document.getElementById('output');
+    button.addEventListener("click", function() {
+        const message = input.value;
 
-    button.addEventListener('click', function() {
-        const userText = input.value;
-        alert("Your name: " + userText);
-        output.textContent = userText;
+        alert("Your Name: " + message);
+
+        output.textContent = message;
     });
-
-
 }
+
 window.addEventListener('load', init);
